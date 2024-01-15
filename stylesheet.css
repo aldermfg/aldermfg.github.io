@@ -1,0 +1,13 @@
+body {
+    align-items: center;
+    background: #0D5C39;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+
+#logo {
+    width: 200px;
+}
