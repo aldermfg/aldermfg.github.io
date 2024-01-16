@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 body {
     align-items: center;
     background: #0D5C39;
@@ -10,4 +12,37 @@ body {
 
 #logo {
     width: 200px;
+}
+
+.flip {
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+    width: 300px;
+}
+
+.flip-container:hover .flip {
+    transform: rotateY(180deg);
+}
+  
+/* Position the front and back side */
+.front, .back {
+    align-items: center;
+    background: #0D5C39;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back {
+    color: #FFFFFF;
+    font-family: Rubik, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    transform: rotateY(180deg);
 }
